@@ -7,3 +7,7 @@ Bootstrap theme: https://startbootstrap.com/theme/sb-admin-2
 ```
 CREATE DATABASE django_dash OWNER postgres;
 ```
+
+```
+source env.sh
+```
