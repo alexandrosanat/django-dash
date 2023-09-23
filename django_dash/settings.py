@@ -86,8 +86,8 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "django_dash",
-        "USER": "",
-        "PASSWORD": "",
+        "USER": os.environ["DB_USER"],
+        "PASSWORD": os.environ["DB_PW"],
     }
 }
 
