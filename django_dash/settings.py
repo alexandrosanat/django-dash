@@ -127,9 +127,29 @@ USE_TZ = True
 
 # Additions for plotly and dash
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-
 ASGI_APPLICATION = "django_dash.routing.application"
-
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKNED": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [
+                ("127.0.0.1", 6379),
+            ],
+        },
+    }
+}
+STATICFILES_FINDER = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django.contrib.staticfiles.finders.DashAssetFinder",
+    "django.contrib.staticfiles.finders.DashComponentFinder",
+]
+PLOTLY_COMPONENTS = [
+    "dash_core_components",
+    "dash_html_render",
+    "dash_renderer",
+    "dpd_components",
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
