@@ -150,6 +150,8 @@ PLOTLY_COMPONENTS = [
     "dash_renderer",
     "dpd_components",
 ]
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
