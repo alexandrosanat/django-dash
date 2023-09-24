@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "home",
+    "django_plotly_dash.apps.DjangoPlotlyDashConfig",
+    "channels",
+    "channels_redis",
 ]
 
 MIDDLEWARE = [
@@ -121,6 +124,11 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+# Additions for plotly and dash
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+ASGI_APPLICATION = "django_dash.routing.application"
 
 
 # Static files (CSS, JavaScript, Images)

@@ -1,6 +1,9 @@
 # django-dash
 
 Bootstrap theme: https://startbootstrap.com/theme/sb-admin-2
+Library: 
+https://pypi.org/project/django-plotly-dash/
+https://django-plotly-dash.readthedocs.io/en/latest/installation.html
 
 ## Create Database
 
